@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParsFront</title>
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script defer src="https://unpkg.com/alpinejs@3.3.4/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header x-data="{ navShow : false }" @scroll.window="navShow = window.scrollY > 100 ? true : false ">
+        <nav class="header navbar navbar-expand-lg navbar-light fixed-top" :class="{'header-scrolled' : navShow}">
+            <div class="container">
+                <a class="navbar-brand" href="#">ParsFront</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                محصولات
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#"> لورم ایپسوم</a></li>
+                                <li><a class="dropdown-item" href="#">لورم ایپسوم متن</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">لورم ایپسوم متن ساختگی</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro d-flex align-items-center overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center mt-5 mt-lg-0">
+                <div class="col-lg-6">
+                    <h3 data-aos="fade-up" class="fw-bold text-primary text-center text-lg-start">لورم ایپسوم متن ساختگی
+                        با تولید سادگی
+                        نامفهوم از صنعت چاپ.</h3>
+                    <h5 data-aos="fade-up" data-aos-delay="400" class="text-muted mt-4">لورم ایپسوم متن ساختگی با تولید
+                        سادگی.</h5>
+                    <button data-aos="fade-up" data-aos-delay="600" class="btn btn-lg btn-primary hover-grow mt-2">لورم
+                        ایپسوم</button>
+                </div>
+                <div data-aos="zoom-out" data-aos-delay="400" class="col-lg-6 mt-5 mt-lg-0">
+                    <img class="img-fluid" src="./images/intro/intro-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row gx-0 gy-5 align-items-center">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content">
+                        <h3 class="text-primary">لورم ایپسوم متن ساختگی</h3>
+                        <h2 class="fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت.</h2>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        </p>
+                        <button class="btn btn-primary hover-grow">لورم ایپسوم</button>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+                    <img class="img-fluid" src="./images/about/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold text-primary">لورم ایپسوم</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                </div>
+            </div>
+            <div class="row g-2" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <img src="./images/values/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">لورم ایپسوم متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است.</p>
+                            <a href="#" class="btn btn-primary">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <img src="./images/values/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">لورم ایپسوم متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است.</p>
+                            <a href="#" class="btn btn-primary">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <img src="./images/values/3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">لورم ایپسوم متن ساختگی</h5>
+                            <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                از طراحان گرافیک است.</p>
+                            <a href="#" class="btn btn-primary">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counts -->
+    <section class="counts py-5 overflow-hidden">
+        <div class="container">
+            <div class="row gy-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center shadow p-3">
+                        <i class="bi bi-emoji-smile blue me-3"></i>
+                        <div>
+                            <span class="fs-3 fw-bold text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="9001">0</span>
+                            <p>لورم ایپسوم متن</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center shadow p-3">
+                        <i class="bi bi-journal-richtext orange me-3"></i>
+                        <div>
+                            <span class="fs-3 fw-bold text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="542">0</span>
+                            <p>لورم ایپسوم متن</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center shadow p-3">
+                        <i class="bi bi-headset green me-3"></i>
+                        <div>
+                            <span class="fs-3 fw-bold text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="8651">0</span>
+                            <p>لورم ایپسوم متن</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center justify-content-center shadow p-3">
+                        <i class="bi bi-people red me-3"></i>
+                        <div>
+                            <span class="fs-3 fw-bold text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="699">0</span>
+                            <p>لورم ایپسوم متن</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features py-5 overflow-hidden">
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="mb-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</h4>
+            </div>
+            <div class="row align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-4 my-4">
+                    <img class="img-fluid" src="./images/features/1.png" alt="" srcset="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-folder-fill me-3"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-stack me-3"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-envelope-fill me-3"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-credit-card-2-front-fill me-3"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-cloud-check-fill me-3"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-file-earmark-code-fill me-3"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services py-5 overflow-hidden">
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="fw-bold">لورم ایپسوم</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
+            </div>
+            <div class="row gy-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box blue">
+                        <i class="icon bi bi-chat-left-text-fill"></i>
+                        <h3 class="fw-bold mt-3">لورم ایپسوم</h3>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                        <a class="read-more mt-5" href="#">
+                            <span>مشاهده بیشتر</span>
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box orange">
+                        <i class="icon bi bi-chat-left-text-fill"></i>
+                        <h3 class="fw-bold mt-3">لورم ایپسوم</h3>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                        <a class="read-more mt-5" href="#">
+                            <span>مشاهده بیشتر</span>
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box green">
+                        <i class="icon bi bi-chat-left-text-fill"></i>
+                        <h3 class="fw-bold mt-3">لورم ایپسوم</h3>
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                        <a class="read-more mt-5" href="#">
+                            <span>مشاهده بیشتر</span>
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing py-5 overflow-hidden">
+        <div class="container">
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="fw-bold">قیمت ها</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
+            </div>
+            <div class="row gy-3 text-center">
+                <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="300">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="fw-bold" style="color: #07d5c0;">پلن رایگان</h4>
+                            <div> 0 <sup>تومان</sup> / در ماه </div>
+                            <img src="./images/pricing/1.png" class="img-fluid p-4" alt="" srcset="">
+                            <ul class="list-unstyled">
+                                <li class="my-2">لورم ایپسوم متن</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="my-2">لورم ایپسوم</li>
+                                <li class="text-muted text-decoration-line-through my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="text-muted text-decoration-line-through">لورم ایپسوم متن</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-4">خرید پلن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="400">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="fw-bold" style="color: #65c600;">پلن اول</h4>
+                            <div> 23 <sup>تومان</sup> / در ماه </div>
+                            <img src="./images/pricing/2.png" class="img-fluid p-4" alt="" srcset="">
+                            <ul class="list-unstyled">
+                                <li class="my-2">لورم ایپسوم متن</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="my-2">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="text-muted text-decoration-line-through">لورم ایپسوم متن</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-4">خرید پلن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="500">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="fw-bold" style="color: #ff901c;">پلن دوم</h4>
+                            <div> 53 <sup>تومان</sup> / در ماه </div>
+                            <img src="./images/pricing/3.png" class="img-fluid p-4" alt="" srcset="">
+                            <ul class="list-unstyled">
+                                <li class="my-2">لورم ایپسوم متن</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="my-2">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="text-muted text-decoration-line-through">لورم ایپسوم متن</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-4">خرید پلن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="600">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="fw-bold" style="color: #ff0071;">پلن سوم</h4>
+                            <div> 89 <sup>تومان</sup> / در ماه </div>
+                            <img src="./images/pricing/4.png" class="img-fluid p-4" alt="" srcset="">
+                            <ul class="list-unstyled">
+                                <li class="my-2">لورم ایپسوم متن</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="my-2">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی</li>
+                                <li class="text-muted text-decoration-line-through">لورم ایپسوم متن</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-4">خرید پلن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact py-5 overflow-hidden">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">ارتباط با ما</h2>
+            </div>
+            <div class="row gy-3">
+                <div class="col-lg-6">
+                    <div class="row gy-4">
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-geo-alt"></i>
+                                <h5 class="fw-bold">آدرس</h5>
+                                <p>لورم ایپسوم<br>لورم ایپسوم متن ساختگی</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-telephone"></i>
+                                <h5 class="fw-bold">شماره تماس</h5>
+                                <p class="cellphone">+98 910 000 0000<br>+98 910 000 0000</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-envelope"></i>
+                                <h5 class="fw-bold">ایمیل</h5>
+                                <p>info@example.com<br>contact@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-clock"></i>
+                                <h5 class="fw-bold">پشتیبانی</h5>
+                                <p>شنبه - پنج شنبه<br>09:00 - 05:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="#" class="contact-form">
+                        <div class="row  gy-4">
+                            <div class="col-md-6">
+                                <label class="form-label">نام</label>
+                                <input class="form-control" type="text">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">ایمیل</label>
+                                <input class="form-control" type="email">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">موضوع</label>
+                                <input class="form-control" type="email">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">متن پیام</label>
+                                <textarea class="form-control" rows="2"></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary">ارسال پیام</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <h3 class="fw-bold">ParsFront</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="mx-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a class="mx-2" href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 offset-lg-1 col-6">
+                    <h5>لینک ها</h5>
+                    <hr class="bg-primary">
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#"> <i class="bi bi-chevron-left"></i> صفحه اصلی</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">محصولات</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">خدمات</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">درباره ما</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <h5>خدمات</h5>
+                    <hr class="bg-primary">
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="bi bi-chevron-left"></i> <a href="#">لورم ایپسوم</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">لورم ایپسوم متن</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">لورم ایپسوم متن ساختگی</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">لورم ایپسوم متن</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <h5>ارتباط با ما</h5>
+                    <hr class="bg-primary">
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="bi bi-chevron-left"></i> <a href="#">درباره ما</a></li>
+                        <li class="mt-2"><i class="bi bi-chevron-left"></i> <a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center py-4" style="background-color: #f6f9ff;">
+            <h5 class="fw-bold">ParsFront</h5>
+            <p>وب پروگ، آکادمی آموزش آنلاین تخصصی برنامه نویسی</p>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
